@@ -1,163 +1,111 @@
-09.15 10.10
-index.html
-
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ADEN STORE — Toko Online</title>
-  <meta name="description" content="ADEN STORE — Toko online terpercaya, melayani pengiriman ke seluruh Indonesia. Kualitas & pelayanan prioritas." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADEN STORE</title>
   <style>
-    :root{
-      --bg:#0f1113; /* warna dasar background gelap */
-      --card:#121316; /* warna untuk kartu konten */
-      --accent:#ffd166; /* warna aksen (kuning) */
-      --muted:#9aa0a6; /* warna teks redup */
-      --glass: rgba(255,255,255,0.04); /* efek transparan kaca */
-      --radius:12px; /* radius border default */
-      --maxw:1100px; /* lebar maksimum konten */
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
     }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,var(--bg),#0b0c0d);color:#fff;line-height:1.45}
-    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}/* header */
-header{display:flex;align-items:center;gap:18px}
-.logo{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
-.logo svg{width:68px;height:68px}
-.brand{font-weight:800;letter-spacing:1px;font-size:22px}
-.tag{color:var(--muted);font-size:12px}
-
-/* hero section terdiri dari grid: teks di kiri dan card kontak di kanan */
-.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
-.card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
-.hero .left h1{margin:0 0 8px;font-size:34px}
-.hero p{margin:0;color:var(--muted)}
-.cta{display:inline-block;margin-top:14px;background:linear-gradient(90deg,var(--accent),#ffb86b);color:#111;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
-
-/* grid produk, otomatis menyesuaikan ukuran layar */
-.products{margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
-.product{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:12px}
-.thumb{height:140px;border-radius:8px;background:linear-gradient(135deg,#111317, #1a1e22);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
-.p-name{margin-top:12px;font-weight:700}
-.p-price{color:var(--accent);font-weight:800}
-
-/* footer kontak dan alamat */
-footer{margin-top:36px;display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;align-items:center}
-.contact small{color:var(--muted)}
-.address{background:var(--glass);padding:12px;border-radius:10px;color:var(--muted)}
-
-/* responsive untuk layar kecil */
-@media (max-width:900px){
-  .hero{grid-template-columns:1fr} /* ubah hero jadi satu kolom */
-  .logo{flex-direction:row;align-items:center}
-  .logo svg{width:54px;height:54px}
-}
-
+    header {
+      background-color: #000;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .card {
+      background-color: #1c1c1c;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .btn-yellow { background-color: #f0a500; }
+    .btn-green { background-color: #25d366; }
+    .product {
+      margin: 15px;
+      padding: 15px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      background: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #bbb;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="logo">
-        <!-- logo sederhana menggunakan SVG -->
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ADEN STORE">
-          <rect width="100" height="100" rx="18" fill="#0b0c0d" />
-          <!-- path berbentuk segitiga sebagai ikon utama -->
-          <g transform="translate(10,10)" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M10 70 L40 10 L70 70" />
-          </g>
-          <!-- teks tambahan dalam logo -->
-          <text x="50" y="84" fill="white" font-size="10" font-weight="700" text-anchor="middle" font-family="Arial">ADEN</text>
-        </svg>
-        <div>
-          <div class="brand">ADEN STORE</div>
-          <div class="tag">Toko online • Pengiriman ke seluruh Indonesia</div>
-        </div>
-      </div>
-      <div style="margin-left:auto;color:var(--muted);font-size:13px">Buka 24 jam</div>
-    </header><section class="hero">
-  <!-- bagian kiri hero berisi perkenalan -->
-  <div class="left card">
-    <h1>Selamat datang di ADEN STORE</h1>
-    <p>ADEN STORE menyediakan produk pilihan berkualitas dengan layanan cepat dan aman. Belanja mudah lewat chat atau lewat website — kami melayani pengiriman ke seluruh Indonesia.</p>
-    <a class="cta" href="#produk">Lihat Produk</a>
+  <header>
+    <h1>ADEN STORE</h1>
+    <p>Buka 24 jam • Pengiriman ke seluruh Indonesia</p>
+  </header>
 
-    <!-- highlight fitur utama toko -->
-    <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
-      <div style="background:var(--glass);padding:10px;border-radius:8px;color:var(--muted);font-size:13px">Gratis ongkir promosi</div>
-      <div style="background:var(--glass);padding:10px;border-radius:8px;color:var(--muted);font-size:13px">Pembayaran COD & transfer</div>
+  <div class="card">
+    <h2>Selamat datang di ADEN STORE</h2>
+    <p>ADEN STORE menyediakan produk pilihan berkualitas dengan layanan cepat dan aman. Belanja mudah lewat chat atau website — kami melayani pengiriman ke seluruh Indonesia.</p>
+    <a href="#produk" class="btn btn-yellow">Lihat Produk</a>
+    <p>✅ Gratis ongkir promo<br>✅ Pembayaran COD & Transfer</p>
+  </div>
+
+  <div class="card">
+    <h3>Kontak Cepat</h3>
+    <p>Chat untuk pesanan & info stok:</p>
+    <!-- Tombol WhatsApp untuk 3 nomor -->
+    <a href="https://wa.me/6283878348853" class="btn btn-green" target="_blank">WA ADENFAROS</a><br>
+    <a href="https://wa.me/62822242283980" class="btn btn-green" target="_blank">WA ADEN STORE</a><br>
+    <a href="https://wa.me/639634549376" class="btn btn-green" target="_blank">WA SHAIRA MAE</a>
+  </div>
+
+  <h2 style="margin-left:15px;">Produk Pilihan</h2>
+  <div id="produk">
+    <div class="product">
+      <img src="https://via.placeholder.com/400x200?text=Produk+A" alt="Produk A">
+      <h3>Produk A</h3>
+      <p>Rp 99.000</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x200?text=Produk+B" alt="Produk B">
+      <h3>Produk B</h3>
+      <p>Rp 149.000</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x200?text=Produk+C" alt="Produk C">
+      <h3>Produk C</h3>
+      <p>Rp 79.000</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x200?text=Produk+D" alt="Produk D">
+      <h3>Produk D</h3>
+      <p>Rp 129.000</p>
     </div>
   </div>
 
-  <!-- bagian kanan hero untuk kontak cepat -->
-  <aside class="card">
-    <h3 style="margin:0 0 8px">Kontak Cepat</h3>
-    <p style="margin:0 0 12px;color:var(--muted)">Chat untuk pesanan & info stok</p>
-    <div style="display:flex;gap:8px;align-items:center">
-      <div style="background:rgba(0,0,0,0.35);padding:10px;border-radius:8px">WA</div>
-      <div>
-        <div style="font-weight:700">Chat Sekarang</div>
-        <small style="color:var(--muted)">Klik tautan chat di profil</small>
-      </div>
-    </div>
-
-    <!-- alamat ditampilkan dengan gaya address box -->
-    <div style="margin-top:16px" class="address">
-      <strong>Alamat:</strong>
-      <div style="font-size:13px;margin-top:6px;color:var(--muted)">Beroperasi secara online — melayani pengiriman ke seluruh Indonesia.</div>
-    </div>
-  </aside>
-</section>
-
-<!-- daftar produk -->
-<section id="produk" style="margin-top:24px">
-  <h2 style="margin:0 0 12px">Produk Pilihan</h2>
-  <div class="products">
-    <!-- kartu produk contoh -->
-    <div class="product">
-      <div class="thumb">GAMBAR</div>
-      <div class="p-name">Produk A</div>
-      <div class="p-price">Rp 99.000</div>
-    </div>
-    <div class="product">
-      <div class="thumb">GAMBAR</div>
-      <div class="p-name">Produk B</div>
-      <div class="p-price">Rp 149.000</div>
-    </div>
-    <div class="product">
-      <div class="thumb">GAMBAR</div>
-      <div class="p-name">Produk C</div>
-      <div class="p-price">Rp 79.000</div>
-    </div>
-    <div class="product">
-      <div class="thumb">GAMBAR</div>
-      <div class="p-name">Produk D</div>
-      <div class="p-price">Rp 129.000</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="contact">
-    <strong>ADEN STORE</strong>
-    <div style="color:var(--muted);font-size:14px">Online — Melayani seluruh Indonesia</div>
-    <small style="display:block;margin-top:8px;color:var(--muted)">Email: info@adenstore.example (contoh)</small>
-  </div>
-
-  <div style="margin-left:auto">
-    <small style="color:var(--muted)">© ADEN STORE — Semua hak dilindungi</small>
-  </div>
-</footer>
-
-  </div>  <script>
-    // Menambahkan event listener untuk tombol CTA (Lihat Produk)
-    // Supaya saat diklik, halaman scroll ke bagian produk dengan efek smooth
-    document.querySelectorAll('.cta').forEach(a=>{
-      a.addEventListener('click', function(e){
-        e.preventDefault();
-        document.querySelector('#produk').scrollIntoView({behavior:'smooth'});
-      })
-    })
-  </script></body>
+  <footer>
+    <p>ADEN STORE — Melayani seluruh Indonesia</p>
+    <p>Email: info@adenstore.example</p>
+    <p>© ADEN STORE — Semua hak dilindungi</p>
+  </footer>
+</body>
 </html>
