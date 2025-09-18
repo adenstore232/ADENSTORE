@@ -4,168 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADEN STORE</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #fff;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: #1e293b;
-    }
-    header h1 {
-      font-size: 20px;
-      color: #60a5fa;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #e2e8f0;
-      font-size: 14px;
-    }
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(to bottom, #1e293b, #0f172a);
-    }
-    .hero h2 {
-      font-size: 36px;
-      margin: 20px 0 10px;
-    }
-    .hero p {
-      max-width: 600px;
-      margin: auto;
-      color: #94a3b8;
-    }
-    .stats {
-      display: flex;
-      justify-content: center;
-      margin: 40px 0;
-      gap: 50px;
-    }
-    .stats div {
-      text-align: center;
-    }
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-    .card {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 20px;
-      width: 280px;
-      text-align: center;
-    }
-    .card h3 {
-      margin: 10px 0;
-      color: #38bdf8;
-    }
-    .card p {
-      color: #cbd5e1;
-      font-size: 14px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      border-radius: 8px;
-      background: #6366f1;
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .steps {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .step {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      width: 200px;
-    }
-    footer {
-      background: #1e293b;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>ADEN STORE</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ADEN STORE</div>
     <nav>
-      <a href="#layanan">Layanan</a>
-      <a href="#cara">Cara Kerja</a>
-      <a href="#kontak">Kontak</a>
+      <ul>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#cara">Cara Kerja</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
     </nav>
+    <a href="#mulai" class="btn-primary">Mulai Konversi</a>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
+    <h1>Layanan Terpercaya & Aman</h1>
     <h2>ADEN STORE</h2>
-    <p>Kami melayani CV COIN SHOPEE, GESTUR SPAYLATER, dan CV DANA CICIL dengan proses cepat, aman, dan terpercaya.</p>
-  </section>
-
-  <section class="stats">
-    <div><h3>1000+</h3><p>Transaksi</p></div>
-    <div><h3>24/7</h3><p>Pelayanan</p></div>
-    <div><h3>99%</h3><p>Kepuasan</p></div>
-  </section>
-
-  <section id="layanan" class="cards">
-    <div class="card">
-      <h3>CV COIN SHOPEE</h3>
-      <p>Biaya mulai 10.5%</p>
-      <a href="#" class="btn">Pesan Sekarang</a>
+    <p>Konversi CV COIN SHOPEE, CV SPYALATER, dan CV DANA CICIL menjadi saldo dengan cepat dan mudah.</p>
+    <p>Dapatkan nilai terbaik untuk CV Anda dengan proses yang cepat, aman, dan terpercaya. Kami melayani 24/7 dengan rate terbaik di pasaran.</p>
+    <div class="hero-buttons">
+      <a href="#mulai" class="btn-primary">Mulai Konversi</a>
+      <a href="#rate" class="btn-secondary">Cek Rate Hari Ini</a>
     </div>
-    <div class="card">
-      <h3>CV SPAYLATER</h3>
-      <p>Biaya mulai 5%</p>
-      <a href="#" class="btn">Pesan Sekarang</a>
-    </div>
-    <div class="card">
-      <h3>CV DANA CICIL</h3>
-      <p>Biaya mulai 10.5%</p>
-      <a href="#" class="btn">Pesan Sekarang</a>
+    <div class="stats">
+      <div><strong>1000+</strong><br>Transaksi Berhasil</div>
+      <div><strong>24/7</strong><br>Layanan Channel</div>
+      <div><strong>99%</strong><br>Kepuasan Pelanggan</div>
     </div>
   </section>
 
-  <section id="cara" class="section">
+  <!-- Konsultasi -->
+  <section class="consult">
+    <h2>Butuh Bantuan Memilih Layanan?</h2>
+    <p>Tim ahli kami siap membantu Anda memilih layanan terbaik sesuai kebutuhan.</p>
+    <a href="https://wa.me/6283678348853" class="btn-primary">Konsultasi Gratis</a>
+  </section>
+
+  <!-- Cara Kerja -->
+  <section id="cara" class="cara-kerja">
     <h2>Cara Kerja</h2>
+    <p>Proses konversi CV yang mudah dan cepat dalam 4 langkah sederhana</p>
     <div class="steps">
-      <div class="step">1. Pilih Layanan</div>
-      <div class="step">2. Input Data</div>
-      <div class="step">3. Konfirmasi</div>
-      <div class="step">4. Proses & Transfer</div>
+      <div class="step"><strong>01</strong><br>Pilih Layanan<br>Pilih jenis CV yang ingin Anda konversi (COIN SHOPEE, SPYALATER, atau DANA CICIL)</div>
+      <div class="step"><strong>02</strong><br>Input Data CV<br>Masukkan detail CV Anda dan saldo yang ingin dikonversi</div>
+      <div class="step"><strong>03</strong><br>Konfirmasi Rate<br>Cek rate konversi terbaru dan konfirmasi transaksi Anda</div>
+      <div class="step"><strong>04</strong><br>Proses & Transfer<br>Tim kami akan memproses dan mentransfer saldo ke akun Anda</div>
+    </div>
+    <div class="benefits">
+      <div>⚡ Proses Cepat</div>
+      <div>🔒 100% Aman</div>
+      <div>📞 Support 24/7</div>
     </div>
   </section>
 
-  <section id="kontak" class="section">
+  <!-- Kontak -->
+  <section id="kontak" class="kontak">
     <h2>Hubungi Kami</h2>
-    <p>WhatsApp: 08xxxxxxxxxx</p>
-    <p>Email: adenstore@mail.com</p>
+    <p>Siap membantu Anda 24/7. Hubungi kami untuk konsultasi gratis atau bantuan teknis.</p>
+    <div class="contact-info">
+      <p><strong>Informasi Kontak</strong></p>
+      <p>WhatsApp Admin 1: <a href="https://wa.me/6283678348853">083678348853</a></p>
+      <p>WhatsApp Admin 2: <a href="https://wa.me/6282224236398">082224236398</a></p>
+      <p>Email: <a href="mailto:adenaturashop@gmail.com">adenstoreshop@gmail.com</a></p>
+      <p>Jam Operasional: 24 Jam / 7 Hari</p>
+    </div>
+    <div class="contact-actions">
+      <a href="https://wa.me/6283678348853" class="btn-primary">WhatsApp Admin 1</a>
+      <a href="https://wa.me/6282224236398" class="btn-secondary">WhatsApp Admin 2</a>
+    </div>
   </section>
 
-  <footer>
-    © 2025 ADEN STORE - Semua Hak Dilindungi
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 ADEN STORE - Semua Hak Dilindungi</p>
   </footer>
 
 </body>
