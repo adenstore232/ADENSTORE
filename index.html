@@ -4,85 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADEN STORE</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 150px;
+    }
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 28px;
+      color: #9b59b6;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #9b59b6;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #9b59b6;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #8e44ad;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 6px;
+      background: #1f1f1f;
+      color: #f1f1f1;
+    }
+    form input:focus, form textarea:focus {
+      outline: 2px solid #9b59b6;
+    }
+    footer {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer a {
+      color: #9b59b6;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">ADEN STORE</div>
-    <nav>
-      <ul>
-        <li><a href="#layanan">Layanan</a></li>
-        <li><a href="#cara">Cara Kerja</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
-    <a href="#mulai" class="btn-primary">Mulai Konversi</a>
+  <header>
+    <img src="logo.png" alt="ADEN STORE Logo">
+    <h1>ADEN STORE</h1>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Layanan Terpercaya & Aman</h1>
-    <h2>ADEN STORE</h2>
-    <p>Konversi CV COIN SHOPEE, CV SPYALATER, dan CV DANA CICIL menjadi saldo dengan cepat dan mudah.</p>
-    <p>Dapatkan nilai terbaik untuk CV Anda dengan proses yang cepat, aman, dan terpercaya. Kami melayani 24/7 dengan rate terbaik di pasaran.</p>
-    <div class="hero-buttons">
-      <a href="#mulai" class="btn-primary">Mulai Konversi</a>
-      <a href="#rate" class="btn-secondary">Cek Rate Hari Ini</a>
-    </div>
-    <div class="stats">
-      <div><strong>1000+</strong><br>Transaksi Berhasil</div>
-      <div><strong>24/7</strong><br>Layanan Channel</div>
-      <div><strong>99%</strong><br>Kepuasan Pelanggan</div>
+  <section>
+    <h2>Layanan Terpercaya & Aman</h2>
+    <p>
+      Konversi <b>CV COIN SHOPEE</b>, <b>CV SPAYLATER</b>, dan <b>CV DANA CICIL</b> menjadi saldo dengan cepat dan mudah.<br>
+      Dapatkan nilai terbaik untuk CV Anda dengan proses yang cepat, aman, dan terpercaya. Kami melayani <b>24/7</b> dengan rate terbaik di pasaran.
+    </p>
+    <a href="https://wa.me/6283878348853" class="btn">Mutasi Konversi (Chat WhatsApp)</a>
+  </section>
+
+  <section>
+    <h2>Kenapa Pilih Kami?</h2>
+    <div class="features">
+      <div class="card">✅ Cek Rate Hari Ini</div>
+      <div class="card">💳 1000+ Transaksi Berhasil</div>
+      <div class="card">⏰ Layanan 24/7</div>
+      <div class="card">⭐ 99% Kepuasan Pelanggan</div>
     </div>
   </section>
 
-  <!-- Konsultasi -->
-  <section class="consult">
-    <h2>Butuh Bantuan Memilih Layanan?</h2>
-    <p>Tim ahli kami siap membantu Anda memilih layanan terbaik sesuai kebutuhan.</p>
-    <a href="https://wa.me/6283678348853" class="btn-primary">Konsultasi Gratis</a>
-  </section>
-
-  <!-- Cara Kerja -->
-  <section id="cara" class="cara-kerja">
+  <section>
     <h2>Cara Kerja</h2>
-    <p>Proses konversi CV yang mudah dan cepat dalam 4 langkah sederhana</p>
-    <div class="steps">
-      <div class="step"><strong>01</strong><br>Pilih Layanan<br>Pilih jenis CV yang ingin Anda konversi (COIN SHOPEE, SPYALATER, atau DANA CICIL)</div>
-      <div class="step"><strong>02</strong><br>Input Data CV<br>Masukkan detail CV Anda dan saldo yang ingin dikonversi</div>
-      <div class="step"><strong>03</strong><br>Konfirmasi Rate<br>Cek rate konversi terbaru dan konfirmasi transaksi Anda</div>
-      <div class="step"><strong>04</strong><br>Proses & Transfer<br>Tim kami akan memproses dan mentransfer saldo ke akun Anda</div>
-    </div>
-    <div class="benefits">
-      <div>⚡ Proses Cepat</div>
-      <div>🔒 100% Aman</div>
-      <div>📞 Support 24/7</div>
+    <div class="features">
+      <div class="card">01. Pilih Layanan<br>Pilih CV Shopee, SpayLater, atau Dana Cicil</div>
+      <div class="card">02. Input Data<br>Masukkan detail CV Anda</div>
+      <div class="card">03. Konfirmasi Rate<br>Cek rate dan konfirmasi transaksi</div>
+      <div class="card">04. Proses & Transfer<br>Tim memproses & transfer saldo Anda</div>
     </div>
   </section>
 
-  <!-- Kontak -->
-  <section id="kontak" class="kontak">
-    <h2>Hubungi Kami</h2>
-    <p>Siap membantu Anda 24/7. Hubungi kami untuk konsultasi gratis atau bantuan teknis.</p>
-    <div class="contact-info">
-      <p><strong>Informasi Kontak</strong></p>
-      <p>WhatsApp Admin 1: <a href="https://wa.me/6283678348853">083678348853</a></p>
-      <p>WhatsApp Admin 2: <a href="https://wa.me/6282224236398">082224236398</a></p>
-      <p>Email: <a href="mailto:adenaturashop@gmail.com">adenstoreshop@gmail.com</a></p>
-      <p>Jam Operasional: 24 Jam / 7 Hari</p>
-    </div>
-    <div class="contact-actions">
-      <a href="https://wa.me/6283678348853" class="btn-primary">WhatsApp Admin 1</a>
-      <a href="https://wa.me/6282224236398" class="btn-secondary">WhatsApp Admin 2</a>
-    </div>
+  <section>
+    <h2>Kontak Kami</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/6283878348853">+62 838-7834-8853</a></p>
+    <p>📧 Email: <a href="mailto:adenstoreshop@gmail.com">adenstoreshop@gmail.com</a></p>
+    <p>🕒 Jam Operasional: 24 Jam / 7 Hari</p>
+
+    <h3>Kirim Pesan Cepat</h3>
+    <form onsubmit="sendToWA(event)">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+      <button type="submit" class="btn">Kirim ke WhatsApp</button>
+    </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 ADEN STORE - Semua Hak Dilindungi</p>
+  <footer>
+    <p>&copy; 2025 ADEN STORE | Semua Hak Dilindungi</p>
   </footer>
+
+  <script>
+    function sendToWA(event) {
+      event.preventDefault();
+      let nama = document.getElementById("nama").value;
+      let pesan = document.getElementById("pesan").value;
+      let url = "https://wa.me/6283878348853?text=" 
+                + encodeURIComponent("Halo Admin, saya " + nama + ".\nPesan: " + pesan);
+      window.open(url, "_blank");
+    }
+  </script>
 
 </body>
 </html>
