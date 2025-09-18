@@ -8,148 +8,89 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
+      background-color: #111;
+      color: #f5f5f5;
       line-height: 1.6;
     }
     header {
-      background: #1f1f1f;
-      text-align: center;
+      background: #222;
       padding: 20px;
-    }
-    header img {
-      max-width: 150px;
+      text-align: center;
     }
     header h1 {
-      margin: 10px 0 0;
-      font-size: 28px;
-      color: #9b59b6;
+      margin: 0;
+      font-size: 32px;
     }
     section {
       padding: 40px 20px;
-      text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
-      color: #9b59b6;
+      text-align: center;
       margin-bottom: 20px;
     }
-    .btn {
-      display: inline-block;
-      background: #9b59b6;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin: 10px 0;
-      transition: 0.3s;
+    p {
+      text-align: justify;
     }
-    .btn:hover {
-      background: #8e44ad;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .card {
-      background: #1f1f1f;
+    .highlight {
+      background: #333;
       padding: 20px;
       border-radius: 10px;
+      margin: 20px 0;
     }
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: left;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 6px;
-      background: #1f1f1f;
-      color: #f1f1f1;
-    }
-    form input:focus, form textarea:focus {
-      outline: 2px solid #9b59b6;
-    }
-    footer {
-      background: #1f1f1f;
-      padding: 20px;
+    .contact {
       text-align: center;
-      font-size: 14px;
     }
-    footer a {
-      color: #9b59b6;
+    a.button {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
+      margin: 10px;
+    }
+    a.button:hover {
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="ADEN STORE Logo">
     <h1>ADEN STORE</h1>
+    <p>Layanan Terpercaya & Aman</p>
   </header>
 
   <section>
-    <h2>Layanan Terpercaya & Aman</h2>
+    <h2>Tentang Kami</h2>
     <p>
-      Konversi <b>CV COIN SHOPEE</b>, <b>CV SPAYLATER</b>, dan <b>CV DANA CICIL</b> menjadi saldo dengan cepat dan mudah.<br>
-      Dapatkan nilai terbaik untuk CV Anda dengan proses yang cepat, aman, dan terpercaya. Kami melayani <b>24/7</b> dengan rate terbaik di pasaran.
+      ADEN STORE melayani konversi CV Coin Shopee, Gestur Paylater, dan Dana Cicil menjadi saldo dengan cepat dan mudah.
+      Dapatkan nilai terbaik untuk CV Anda dengan proses yang cepat, aman, dan terpercaya. Kami siap membantu 24/7 dengan
+      rate terbaik di pasaran.
     </p>
-    <a href="https://wa.me/6283878348853" class="btn">Mutasi Konversi (Chat WhatsApp)</a>
   </section>
 
-  <section>
-    <h2>Kenapa Pilih Kami?</h2>
-    <div class="features">
-      <div class="card">✅ Cek Rate Hari Ini</div>
-      <div class="card">💳 1000+ Transaksi Berhasil</div>
-      <div class="card">⏰ Layanan 24/7</div>
-      <div class="card">⭐ 99% Kepuasan Pelanggan</div>
-    </div>
-  </section>
-
-  <section>
+  <section class="highlight">
     <h2>Cara Kerja</h2>
-    <div class="features">
-      <div class="card">01. Pilih Layanan<br>Pilih CV Shopee, SpayLater, atau Dana Cicil</div>
-      <div class="card">02. Input Data<br>Masukkan detail CV Anda</div>
-      <div class="card">03. Konfirmasi Rate<br>Cek rate dan konfirmasi transaksi</div>
-      <div class="card">04. Proses & Transfer<br>Tim memproses & transfer saldo Anda</div>
-    </div>
+    <p>
+      1. Pilih layanan yang tersedia (Gestur Paylater, Dana Cicil, atau CV Coin Shopee via QRIS).<br>
+      2. Hubungi admin untuk memastikan detail transaksi.<br>
+      3. Lakukan pembayaran sesuai instruksi.<br>
+      4. Transaksi diproses dengan cepat dan aman.<br>
+      5. Saldo langsung ditransfer ke akun Anda.
+    </p>
   </section>
 
-  <section>
-    <h2>Kontak Kami</h2>
-    <p>📱 WhatsApp: <a href="https://wa.me/6283878348853">+62 838-7834-8853</a></p>
-    <p>📧 Email: <a href="mailto:adenstoreshop@gmail.com">adenstoreshop@gmail.com</a></p>
-    <p>🕒 Jam Operasional: 24 Jam / 7 Hari</p>
-
-    <h3>Kirim Pesan Cepat</h3>
-    <form onsubmit="sendToWA(event)">
-      <input type="text" id="nama" placeholder="Nama Anda" required>
-      <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
-      <button type="submit" class="btn">Kirim ke WhatsApp</button>
-    </form>
+  <section class="contact">
+    <h2>Hubungi Kami</h2>
+    <p>WhatsApp Admin: <a href="https://wa.me/6283878348853" target="_blank">+62 838-7834-8853</a></p>
+    <p>Email: <a href="mailto:adenstoreshop@gmail.com">adenstoreshop@gmail.com</a></p>
+    <p>Jam Operasional: 24 Jam / 7 Hari</p>
+    <a href="https://wa.me/6283878348853" target="_blank" class="button">Chat via WhatsApp</a>
+    <a href="mailto:adenstoreshop@gmail.com" class="button">Kirim Email</a>
   </section>
-
-  <footer>
-    <p>&copy; 2025 ADEN STORE | Semua Hak Dilindungi</p>
-  </footer>
-
-  <script>
-    function sendToWA(event) {
-      event.preventDefault();
-      let nama = document.getElementById("nama").value;
-      let pesan = document.getElementById("pesan").value;
-      let url = "https://wa.me/6283878348853?text=" 
-                + encodeURIComponent("Halo Admin, saya " + nama + ".\nPesan: " + pesan);
-      window.open(url, "_blank");
-    }
-  </script>
 
 </body>
 </html>
